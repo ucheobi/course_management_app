@@ -1,0 +1,42 @@
+
+<!--templates starts from here-->
+
+<%- include('templates/header') %>
+
+    <div class="bgd">
+       
+        <div class="login-modal">
+            <h1>Login</h1>
+            
+            <div class="form-body">     
+                <!-- Makes POST request to /login route -->
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <label for="email">Username</label>
+                        <input type="email" class="form-control" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+
+                    <div class="remember-me">
+                        <input type="radio" id="remember" name="remember">
+                        <label for="remember">Remember me</label><br>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+               
+            <div class="forget-password-btn">
+                <a href="#">
+                    Forgotten your username or password?
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<%- include('templates/footer') %>

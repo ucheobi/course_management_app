@@ -1,0 +1,86 @@
+<%- include('../templates/header') %>
+
+<%- include('../admin_templates/admin_template') %>
+
+<!-- Add your page here -->
+<h3>Add New User</h3>
+<div class="form-section">
+
+    <div class="form-content">
+        <form action="/user" method="POST">
+            <div class="name-section">
+                <input type="text" class="firstname" id="firstname" name="firstname" placeholder="First Name" > 
+                <input type="text" id="middlename" name="middlename" placeholder="Middle Name">
+                <br>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+                
+            </div>
+            <br>
+            <div class="personal-data">
+                <div class="dob">
+                    <label for="dateofbirth">Date of Birth</label><br>
+                    <input type="date" id="dob" name="dateofbirth" value="2000-07-22">
+                </div>
+                    <br>
+                
+                <!-- Nationality -->
+                <%- include('./countries') %>
+            </div>
+            <div class="gender-mobile">
+                <div class="mobile">
+                    <input type="number" id="mobile" name="mobile" placeholder="Phone Number">
+                </div>
+                <div class="gender">
+                    <label for="gender">
+                        <input type="checkbox" name="gender" value="Male" /> Male <br>
+                        <input type="checkbox" name="gender" value="Female" /> Female <br>
+                        <input type="checkbox" name="gender" value="Others" /> Others <br>
+                    </label>      
+                </div>
+            </div>
+            <br>
+
+            <div class="faculty">
+                <input type="text" id="faculty" name="faculty" placeholder="Faculty">
+                <input type="text" id="department" name="department" placeholder="Department">
+            </div>
+            
+            <br>
+            
+            <div class="degree-type">
+
+                <div class="degree">
+                    <label for="degree">Degree Type</label><br>
+                    <select id="degree" name="degree">
+                        <option value="bachelors">Bachelor (B.Sc.)</option>
+                        <option value="Masters">Masters (M.Sc.)</option>
+                        <option value="doctorate">Doctorate (Dr.)</option>
+                        <option value="postgraduate">Post Graduate (PGD)</option>
+                        <option value="erasmus">Erasmus (Exchange Student)</option>
+                    </select>
+                </div>
+                
+
+                <div class="usertype">
+                    <label for="usertype">Type of User</label><br>
+                    <select id="usertype" name="usertype">
+                        <option value="student">Student</option>
+                        <option value="lecturer">Lecturer</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                 
+            </div>
+            
+            <div class="submit">
+                <input type="submit" value="Save & Generate ID/Password">
+                <input type="reset" value="Cancel">
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+<!-- End of page -->
+<%- include('../templates/footer') %>

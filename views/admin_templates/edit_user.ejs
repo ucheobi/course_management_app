@@ -1,0 +1,84 @@
+
+
+
+<%- include('../templates/header') %>
+
+<%- include('../admin_templates/admin_template') %>
+
+<div class="user-profile">
+
+    <div class="user">
+        <h2>User Details</h2>
+    </div>
+
+    <div class="details">
+
+        <table style="width:100%">
+            <tr>
+                <th></th>
+            </tr>
+            <tr class="f_name">
+                <td>First Name</td>
+                <td></td>
+            </tr>
+            <tr class="m_name">
+                <td>Middle Name</td>
+                <td><%= data.middle_name %></td>
+            </tr>
+            <tr class="l_name">
+                <td>Last Name</td>
+                <td><%= data.last_name %></td>
+            </tr>
+            <tr class="username">
+                <td>Username</td>
+                <td><%= data.username %></td>
+            </tr>
+            <tr class="password">
+                <td>Password</td>
+                <td><%= pwd %></td>
+            </tr>
+            <tr class="email">
+                <td>Email Address</td>
+                <td> </td>
+            </tr>
+            <tr class="phone">
+                <td>Phone Number</td>
+                <td><%= data.phone_number %></td>
+            </tr>
+            <tr class="mat_number">
+                <td>Matriculation Number</td>
+                <td><%= data.mat_number %></td>
+            </tr>
+            <tr class="dob">
+                <td>Date of Birth</td>
+                <td><%= data.date_of_birth %></td>
+            </tr>
+            <tr class="gender">
+                <td>Gender</td>
+                <td><%= data.gender %></td>
+            </tr>
+            <tr class="nationality">
+                <td>Nationality</td>
+                <td><%= data.nationality %></td>
+            </tr>
+            <tr class="degree">
+                <td>Degree</td>
+                <td><%= data.degree %></td>
+            </tr>
+            <tr class="role">
+                <td>Role</td>
+                <td><%= data.role %></td>
+            </tr>
+            <tr class="faculty">
+                <td>Faculty</td>
+                <td><%= data.faculty %></td>
+            </tr>
+            <tr class="dept">
+                <td>Department</td>
+                <td><%= data.department %></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- End of page -->
+<%- include('../templates/footer') %>

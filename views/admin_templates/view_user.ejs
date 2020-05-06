@@ -1,0 +1,106 @@
+<%- include('../templates/header') %>
+
+<%- include('../admin_templates/admin_template') %>
+
+<div class="user-profile"> 
+
+    <div class="details">
+
+        <table >
+            <tr class="details-header">
+                <th colspan="3"><%= `${data.last_name.toUpperCase()}, ${data.first_name} ${data.middle_name}` %></th>       
+            </tr>
+            <tr class="f_name">
+                <td class="number">1</td>
+                <td class="column">First Name</td>
+                <td class="row"><%= data.first_name %></td>
+               
+            </tr>
+            <tr class="m_name">
+                <td class="number">2</td>
+                <td class="column">Middle Name</td>
+                <td class="row"><%= data.middle_name %></td>
+               
+            </tr>
+            <tr class="l_name">
+                <td class="number">3</td>
+                <td class="column">Last Name</td>
+                <td class="row"><%= data.last_name %></td>
+            
+            </tr>
+            <tr class="username">
+                <td class="number">4</td>
+                <td class="column">Username</td>
+                <td class="row"><%= data.username %></td>
+              
+            </tr>
+            <tr class="password">
+                <td class="number">5</td>
+                <td class="column">Password</td>
+                <td class="row"><%= pwd %></td>
+                
+            </tr>
+            <tr class="email">
+                <td class="number">6</td>
+                <td class="column">Email Address</td>
+                <td class="row"><%= data.email %></td>
+                
+            </tr>
+            <tr class="phone">
+                <td class="number">7</td>
+                <td class="column">Phone Number</td>
+                <td class="row"><%= data.phone_number %></td>
+               
+            </tr>
+            <tr class="mat_number">
+                <td class="number">8</td>
+                <td class="column">Matriculation Number</td>
+                <td class="row"><%= data.mat_number %></td>
+            
+            </tr>
+            <tr class="dob">
+                <td class="number">9</td>
+                <td class="column">Date of Birth</td>
+                <td class="row"><%= data.date_of_birth %></td>
+              
+            </tr>
+            <tr class="user-gender">
+                <td class="number">10</td>
+                <td class="column">Gender</td>
+                <td class="row"><%= data.gender %></td>
+            
+            </tr>
+            <tr class="nationality">
+                <td class="number">11</td>
+                <td class="column">Nationality</td>
+                <td class="row"><%= data.nationality %></td>
+            
+            </tr>
+            <tr class="degree">
+                <td class="number">12</td>
+                <td class="column">Degree</td>
+                <td class="row"><%= data.degree %></td>
+              
+            </tr>
+            <tr class="role">
+                <td class="number">13</td>
+                <td class="column">Role</td>
+                <td class="row"><%= data.role %></td>
+              
+            </tr>
+            <tr class="faculty">
+                <td class="number">14</td>
+                <td class="column">Faculty</td>
+                <td class="row"><%= data.faculty %></td>
+               
+            </tr>
+            <tr class="dept">
+                <td class="number">15</td>
+                <td class="column">Department</td>
+                <td class="row"><%= data.department %></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- End of page -->
+<%- include('../templates/footer') %>

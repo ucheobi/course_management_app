@@ -7,7 +7,7 @@
 <div class="form-section">
 
     <div class="form-content">
-        <form action="/user" method="POST">
+        <form action="/register" method="POST">
             <div class="name-section">
                 <input type="text" class="firstname" id="firstname" name="firstname" placeholder="First Name" > 
                 <input type="text" id="middlename" name="middlename" placeholder="Middle Name">
@@ -20,7 +20,7 @@
             <div class="personal-data">
                 <div class="dob">
                     <label for="dateofbirth">Date of Birth</label><br>
-                    <input type="date" id="dob" name="dateofbirth" value="2000-07-22">
+                    <input type="date" id="dob" name="dateofbirth" value="YYYY-MM-DD">
                 </div>
                     <br>
                 
@@ -62,9 +62,9 @@
                 </div>
                 
 
-                <div class="usertype">
-                    <label for="usertype">Type of User</label><br>
-                    <select id="usertype" name="usertype">
+                <div class="role">
+                    <label for="role">Role</label><br>
+                    <select id="role" name="role">
                         <option value="student">Student</option>
                         <option value="lecturer">Lecturer</option>
                         <option value="admin">Admin</option>
@@ -74,8 +74,8 @@
             </div>
             
             <div class="submit">
-                <input type="submit" value="Save & Generate ID/Password">
-                <input type="reset" value="Cancel">
+                <input type="submit" class="save-btn" value="Save & Generate Details">
+                <input type="reset" class="clear-btn" value="Cancel">
             </div>
             
         </form>
